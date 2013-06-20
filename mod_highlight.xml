@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0">
+	<name>Highlight</name>
+	<author>Benjamin Booth</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2011 Benjamin Booth</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>bkbooth@facebook.com</authorEmail>
+	<authorUrl>www.facebook.com/bkbooth</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_HL_DESC</description>
+	<files>
+		<filename module="mod_highlight">mod_highlight.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="images_folder" type="text" default="images/highlight" label="MOD_HL_LBL_IMG_FOLDER" description="MOD_HL_DESC_IMG_FOLDER" />
+				<field name="images_width" type="text" default="788" label="MOD_HL_LBL_IMG_WIDTH" description="MOD_HL_DESC_IMG_WIDTH" />
+				<field name="images_height" type="text" default="358" label="MOD_HL_LBL_IMG_HEIGHT" description="MOD_HL_DESC_IMG_HEIGHT" />
+				<field name="transition_time" type="text" default="1000" label="MOD_HL_LBL_TRANS_TIME" description="MOD_HL_DESC_TRANS_TIME" />
+				<field name="image_time" type="text" default="5000" label="MOD_HL_LBL_IMG_TIME" description="MOD_HL_DESC_IMG_TIME" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" descripimages_foldertion="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

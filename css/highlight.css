@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+/**
+* Highlight Module
+* 2011 Benjamin Booth
+* @bkbooth11
+* bkbooth@facebook.com
+*/
+
+.mod_highlight {
+	padding: 10px 0;
+	position: relative;
+	z-index: 1;
+}
+.hl-window {
+	overflow: hidden;
+	padding: 0 20px;
+	position: relative;
+	left: 50px;
+}
+.hl-image {
+	position: absolute;
+	top: 0;
+	padding: 0 20px;
+	float: left;
+}
+
+a.nav-left, a.nav-right {
+	display: block;
+	width: 42px;
+	padding: 0 4px;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+a.nav-left { left: 0; background: url(../images/nav-arrow-left.png) center center no-repeat; }
+a.nav-right { right: 0; background: url(../images/nav-arrow-right.png) center center no-repeat; }
+a.nav-left:hover { background: url(../images/nav-arrow-left-ovr.png) center center no-repeat; }
+a.nav-right:hover { background: url(../images/nav-arrow-right-ovr.png) center center no-repeat; }
+
+div.hl-fade-left, div.hl-fade-right {
+	width: 20px;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+div.hl-fade-left {
+	left: 0;
+	background: url(../images/fade-left.png) left top repeat-y;
+}
+div.hl-fade-right {
+	right: 0;
+	background: url(../images/fade-right.png) right top repeat-y;
+}
